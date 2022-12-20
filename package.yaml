@@ -1,0 +1,27 @@
+name:                my-scotty
+version:             0.1.2
+github:              "WhiteCat6142/my-scotty"
+license:             MIT
+author:              "WhiteCat6142"
+maintainer:          "whitecat6142+git@gmail.com"
+copyright:           "2022 WhiteCat6142"
+
+description:         Please see the README on GitHub at <https://github.com/WhiteCat6142/my-scotty>
+
+dependencies:
+- aeson
+- base >= 4.7 && < 5
+- blaze-html
+- blaze-markup
+- scotty
+- text
+- wai-extra
+- wai-middleware-static
+- http-types
+- transformers
+- lens
+
+executables:
+  Main:
+    main:                Main.hs
+    source-dirs:         .

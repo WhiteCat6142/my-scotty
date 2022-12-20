@@ -1,0 +1,17 @@
+body
+{
+  min-height : 2000px;
+}
+
+.jumbotron
+{
+  text-align : center;
+}
+
+#gmail
+{
+  margin-left : 10px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

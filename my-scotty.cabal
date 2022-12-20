@@ -1,0 +1,45 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           my-scotty
+version:        0.1.2
+description:    Please see the README on GitHub at <https://github.com/WhiteCat6142/my-scotty>
+homepage:       https://github.com/WhiteCat6142/my-scotty#readme
+bug-reports:    https://github.com/WhiteCat6142/my-scotty/issues
+author:         WhiteCat6142
+maintainer:     whitecat6142+git@gmail.com
+copyright:      2022 WhiteCat6142
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/WhiteCat6142/my-scotty
+
+executable Main
+  main-is: Main.hs
+  other-modules:
+      Controllers.Home
+      Views.Home
+      Views.Register
+      Views.Utils
+      Paths_my_scotty
+  hs-source-dirs:
+      ./
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , blaze-html
+    , blaze-markup
+    , http-types
+    , lens
+    , scotty
+    , text
+    , transformers
+    , wai-extra
+    , wai-middleware-static
+  default-language: Haskell2010

@@ -1,0 +1,5 @@
+# ghc-8.10.7
+resolver: lts-18.28
+
+ghc-options:
+ "$targets": -Wno-missing-methods -threaded -rtsopts -with-rtsopts=-N2 -O2 -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
